@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bg2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".gyroscope">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="@string/gyroscope_data"
+        android:layout_marginVertical="60sp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gyro_x_tv"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/x"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/gyro_y_tv"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="47dp"
+        android:text="@string/y"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/acc_z_tv"
+        app:layout_constraintStart_toEndOf="@+id/acc_x_tv"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/gyro_z_tv"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="63dp"
+        android:text="@string/z"
+        android:layout_marginLeft="50dp"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/acc_y_tv"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/arrow_tv"
+        android:layout_width="160dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="126dp"
+        android:text="@string/rotation_indicator"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gyro_x_tv" />
+
+</LinearLayout>
